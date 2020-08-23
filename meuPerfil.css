@@ -75,6 +75,13 @@ img {
   left: 60%;
 }
 
+#legenda {
+  position: relative;
+  left: 43%;
+  font-weight: bolder;
+  color: #005534;
+}
+
 #quemsoueu {
   position: absolute;
   top: 150px;
