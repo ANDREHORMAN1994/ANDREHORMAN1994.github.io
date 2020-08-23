@@ -77,7 +77,9 @@ img {
 
 #legenda {
   position: relative;
-  left: 43%;
+  float: right;
+  right: 23%;
+  top: 390px;
   font-weight: bolder;
   color: #005534;
 }
