@@ -2,9 +2,12 @@
 @import url("https://fonts.google.com/specimen/Open+Sans?query=open+sans");
 @import url("https://fonts.google.com/specimen/Oranienbaum?query=Oranienbaum");
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
   background-color: rgb(27, 27, 27);
 }
@@ -13,108 +16,130 @@ p {
   font-family: "Oranienbaum", sans-serif;
 }
 
-h1 {
-  margin: 0;
-  padding: 10px;
+.head {
   background-color: #11a36a;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 2;
+}
+
+.head h1 {
   color: white;
   font-family: monospace;
   font-size: 4em;
-  text-align: center;
 }
 
-h3 {
-  margin: 0;
-  padding: 10px;
-  background-color: black;
-  color: #11a36a;
-  text-align: center;
-}
-
-#botao1 {
+.head .botao1 {
   font-family: cursive;
   font-weight: bold;
   font-style: italic;
   font-size: 15px;
-  text-align: center;
   text-decoration: none;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.308);
 
   color: white;
   background-color: #11a36a;
-  border: 5px dashed white;
+  border: 3px dashed white;
 
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 160px;
-  padding: 10px 10px 10px 10px;
+  width: 150px;
+  padding: 10px 20px;
   border-radius: 20px;
-  position: absolute;
-  top: 5px;
-  left: 20%;
 }
 
-#botao1:hover {
+.botao1:hover {
   color: black;
   background-color: #005534;
-  border: 5px dashed black;
+  border: 3px solid black;
+}
+
+.subtitulo-portfolio {
+  padding: 10px;
+  background-color: black;
+  color: #11a36a;
+  text-align: center;
+  position: relative;
+  top: 80px;
+  width: 100%;
+  z-index: 1;
 }
 
 .grupo1 {
   background-color: white;
-  margin: 0;
-  padding: 0 0 20px 0;
+  padding: 30px 70px;
+  max-width: 80%;
+  margin: auto;
 }
 
-img {
-  /* border-radius: 50%; */
-  margin: 20px;
-  width: 200px;
+.grupo1 .caixa-apresentacao1 {
+  width: 80%;
+  text-align: center;
+  margin: 20px 20px;
+  margin-top: 70px;
+}
+
+.grupo1 .caixa-apresentacao2 img {
+  border-radius: 50%;
   border: 5px ridge #11a36a;
-  position: relative;
-  left: 60%;
+  width: 20%;
+  padding: 5px;
 }
 
-#legenda {
-  position: relative;
-  float: right;
-  right: 23%;
-  top: 390px;
-  font-weight: bolder;
-  color: #005534;
-}
-
-#quemsoueu {
-  position: absolute;
-  top: 150px;
-  right: 48%;
-}
-
-.hello {
+.grupo1 h1 {
+  background-color: #005534;
   color: white;
-  font-weight: bolder;
-  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.apresentacao-inicial {
+.grupo1 p {
   background-color: #11a36a;
   color: black;
-  padding: 3px 10px 3px 10px;
-  margin: 20px;
-  position: absolute;
-  top: 220px;
-  right: 40%;
-  left: 15%;
+  padding: 10px 10px;
+  margin: 10px 20px;
   text-align: justify;
   line-height: 20px;
+  
 }
 
-.estudante-dev {
+.grupo1 .estudante-dev {
+  background-color: #005534;
   color: white;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
 }
+
+#hello {
+  background-color: #005534;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/*
+#legenda {
+  float: right;
+  position: relative;
+  top: 400px;
+  right: 2%;
+  width: 200px;
+  margin: 10px 10px;
+  font-weight: bolder;
+  
+  color: #005534;
+  z-index: 4;
+}
+
+
+
+
+
+
 
 .redes {
   background-color: black;
@@ -207,11 +232,6 @@ img {
   background-color: #11a36a;
 }
 
-#meucorpohtml {
-  overflow: auto;
-  overflow-x: hidden;
-}
-
 .referencia {
   color: white;
   text-align: center;
@@ -229,5 +249,11 @@ img {
 }
 
 #botao2:hover {
-color: #11a36a;
+  color: #11a36a;
+}
+*/
+
+.meucorpohtml {
+  overflow: auto;
+  overflow-x: hidden;
 }
