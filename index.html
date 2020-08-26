@@ -2,66 +2,103 @@
 <html>
 
 <head>
+    <!-- PADRONIZAÇÃO DA LINGUAGEM -->
     <meta charset="utf-8">
     <!-- TÍTULO DA PÁGINA -->
-    <title>MEU PRIMEIRO HTML</title>
+    <title> PORTFÓLIO WEB </title>
+    <!-- CSS EXTERNO -->
     <link rel="stylesheet" type="text/css" href="/ANDREHORMAN1994.github.io/meuPerfil.css">
 </head>
 <!-- MEU CSS TERMINA DENTRO DA MINHA HEAD, POIS FAZ PARTE DAS MINHAS CONFIGURAÇÕES -->
 
 <body>
     <!-- CORPO DA MINHA PÁGINA, CONTÉM HTML E JS -->
-    <div id="meucorpohtml">
-        <h1 id="topo">TRYBE</h1>
+    <div class="meucorpohtml">
+        <!-- div referente todo o body, remover overflow eixo X -->
+<span id="botao-topo"></span>
 
-        <div class="grupo1">
-            <h3> MEU PORTFÓLIO WEB </h3>
+        <div class="head">
 
-            <a href="#obs" id="botao1"> MINHAS SKILLS </a>
+            <a href="#skills-aqui" class="botao1"> MINHAS SKILLS </a>
 
-            <img src="/ANDREHORMAN1994.github.io/assets/EU.jpg" alt="Este sou eu"> 
-           <a href="/assets/EU.jpg"> <span id="legenda">"Ampliar Imagem Aqui"</span> </a>
+            <h1>TRYBE</h1>
 
-            <span id="quemsoueu">
-                <h1> QUEM SOU EU? </h1>
-            </span>
-
-            <span class="apresentacao-inicial">
-                <div class="hello">
-                    <p> <em> Hello_World!! </em>
-                </div>
-
-                <em>Meu nome é <strong>André Horman de Medeiros Correia</strong></em>, tenho 25 anos, graduado em
-                ciências contábeis, itabaianense, atualmente morando em <strong>João Pessoa-PB</strong>. <br>
-                Vivo de nerdices, alto consumidor da indústria do <strong><em>Cinema, Animes, Livros e
-                        Quadrinhos</em></strong>, são meus vícios. E agora ganhei mais uma paixão,
-                <strong>"Programar"</strong>, decidi me reinventar e buscar uma nova área de atuação, o que me levou
-                finalmente a encontrar a <strong>TRYBE!</strong>
-
-                <div class="estudante-dev">Sou estudante Dev Web - Full Stack | <strong> <em>TRYBE</em> </strong> <br>
-                    Aluno <strong>Trybe</strong> | <em>Turma 07 - Faca e Queijo !!</em> </p>
-                </div>
-
-                </p>
-            </span>
         </div>
 
-        <h1 class="redes"> REDES SOCIAIS </h1>
+        <div class="subtitulo-portfolio">
+            <h3> MEU <span>PORTFÓLIO WEB </h3>
+        </div>
 
-        <a class="meus-links-redes" id="github" target="_blank" href="https://github.com/ANDREHORMAN1994"> ACESSE MEU
-            GITHUB
-        </a>
+        <div class="grupo1">
 
-        <a class="meus-links-redes2" target="_blank" href="https://www.linkedin.com/in/andrehorman/"> ACESSE MEU
-            LINKEDIN
-        </a>
+            <div class="caixa-apresentacao1">
+
+                <span class="quemsoueu">
+                    <h1>QUEM SOU EU?</h1>
+                </span>
+
+                <span id="hello">
+                    <em> Hello_World!! </em>
+                </span>
+                <br>
+
+                <p>
+                    <em>Meu nome é <strong>André Horman de Medeiros Correia</strong></em>, tenho 25 anos, graduado em
+                    ciências contábeis, itabaianense, atualmente morando em <strong>João Pessoa-PB</strong>. <br>
+                    Vivo de nerdices, alto consumidor da indústria do <strong><em>Cinema, Animes, Livros e
+                            Quadrinhos</em></strong>, são meus vícios. E agora ganhei mais uma paixão,
+                    <strong>"Programar"</strong>, decidi me reinventar e buscar uma nova área de atuação, o que me levou
+                    finalmente a encontrar a <strong>TRYBE!</strong>
+                </p>
+
+                <div class="estudante-dev">
+                    Sou estudante Dev Web - Full Stack | <strong> <em>TRYBE</em> </strong> <br>
+                    Aluno <strong>Trybe</strong> | <em>Turma 07 - Faca e Queijo!!</em>
+                </div>
+
+            </div>
+
+            <div class="caixa-apresentacao2">
+
+                <img src="/ANDREHORMAN1994.github.io/assets/EU.jpg" alt="Este sou eu" width="100px">
+                <br>
+                <a href="/ANDREHORMAN1994.github.io/assets/EU.jpg"> <span class="legenda">"Ampliar Imagem Aqui"</span> </a>
+
+                <span id="skills-aqui"> </span>
+            </div>
+
+        </div>
+
+        <h1 id="redes"> REDES SOCIAIS </h1>
+
+        <div class="season-redes">
+
+            <div class="meus-links-redes1">
+
+                <a class="github" target="_blank" href="https://github.com/ANDREHORMAN1994">
+                    ACESSE MEU GITHUB
+                </a>
+            </div>
+
+            <div class="meus-links-redes2">
+
+                <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/andrehorman/"> 
+                    ACESSE MEU LINKEDIN
+                </a>
+            </div>
+
+        </div>
 
         <div class="grupo3">
 
-            <div class="componentes">
-                <h2>
-                    <spam id="hard-skills"> HARD SKILLS </spam>
-                </h2>
+            <div class="componentes1">
+
+                <div class="hard-skills">
+                    <h2>
+                        HARD SKILLS
+                    </h2>
+                </div>
+
                 <ul class="lista"> <strong>
                         <li> INGLÊS INTERMEDIÁRIO; </li>
                         <li> ESPANHOL BÁSICO; </li>
@@ -82,8 +119,14 @@
                 </ul>
             </div>
 
-            <div class="observacoes-importantes">
-                <h2 id="obs"> <span id="soft-skills"> SOFT SKILLS </span></h2>
+            <div class="componentes2">
+
+                <div class="soft-skills">
+                    <h2 class="obs">
+                        SOFT SKILLS
+                    </h2>
+                </div>
+
                 <ol class="lista"> <strong>
                         <li> CAPACIDADE DE APRENDIZADO, APRENDER A APRENDER </li>
                         <li> MANTER CALMA EM MOMENTOS DE CONFLITOS </li>
@@ -100,11 +143,13 @@
             </div>
 
         </div>
-        <h4 class="referencia"> <em>“Código limpo é aquele escrito por alguém que se preocupa”</em> <span
-                id="citacao-autor">- Michael Feathers</span> </h4>
 
-        <div >
-            <h3> <a href="#topo" id="botao2">VOLTAR AO TOPO</a> </h3>
+        <h4 class="referencia"> <em>“Código limpo é aquele escrito por alguém que se preocupa”</em> 
+            
+            <span class="citacao-autor">- Michael Feathers</span> </h4>
+
+        <div class="botao2">
+            <h3> <a href="#botao-topo" >VOLTAR AO TOPO</a> </h3>
         </div>
 
     </div>

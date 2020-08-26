@@ -2,126 +2,215 @@
 @import url("https://fonts.google.com/specimen/Open+Sans?query=open+sans");
 @import url("https://fonts.google.com/specimen/Oranienbaum?query=Oranienbaum");
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(39, 39, 39);
 }
 
 p {
   font-family: "Oranienbaum", sans-serif;
 }
 
-h1 {
-  margin: 0;
-  padding: 10px;
+#botao-topo {
+  content: '';
+}
+
+#skills-aqui {
+  content: '';
+}
+
+.head {
   background-color: #11a36a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+  z-index: 2;
+  text-align: center;
+}
+
+/* .head::after {
+  content: "";
+  display: inline;
+  width: 100%;
+} */
+
+.head h1 {
   color: white;
   font-family: monospace;
   font-size: 4em;
-  text-align: center;
+  display: inline;
+  margin-right: 0%;
+  margin-left: 10%;
 }
 
-h3 {
-  margin: 0;
-  padding: 10px;
-  background-color: black;
-  color: #11a36a;
-  text-align: center;
-}
-
-#botao1 {
+.head .botao1 {
   font-family: cursive;
   font-weight: bold;
   font-style: italic;
   font-size: 15px;
-  text-align: center;
   text-decoration: none;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.308);
 
   color: white;
   background-color: #11a36a;
-  border: 5px dashed white;
+  border: 3px dashed white;
 
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 160px;
-  padding: 10px 10px 10px 10px;
+  width: 150px;
+  padding: 10px 20px;
   border-radius: 20px;
-  position: absolute;
-  top: 5px;
-  left: 20%;
+  display: inline-block;
+  margin-left: 0%;
+  margin-right: 10%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  position: relative;
+  bottom: 10px;
 }
 
-#botao1:hover {
+.botao1:hover {
   color: black;
   background-color: #005534;
-  border: 5px dashed black;
+  border: 3px solid black;
+}
+
+.subtitulo-portfolio {
+  padding: 8px 20px;
+  margin-top: 10px;
+  background-color: black;
+  color: #11a36a;
+  text-align: center;
+  position: relative;
+  top: 75px;
+  width: 100%;
+  z-index: 1;
 }
 
 .grupo1 {
   background-color: white;
-  margin: 0;
-  padding: 0 0 20px 0;
+  padding: 40px 0px;
+  margin: 50px 0px;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+  text-align: center;
 }
 
-img {
+.grupo1 .caixa-apresentacao1 {
+  width: 500px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+}
+
+.grupo1 .caixa-apresentacao2 {
+  margin: 10px 10px;
+  display: inline-block;
+  width: auto;
+  position: relative;
+  bottom: 0px;
+}
+
+.grupo1 .caixa-apresentacao2 img {
   /* border-radius: 50%; */
-  margin: 20px;
-  width: 200px;
   border: 5px ridge #11a36a;
+  width: 200px;
+  padding: 5px;
+  background-color: black;
+}
+
+.grupo1 h1 {
+  background-color: #005534;
+  color: white;
+  margin: 10px 40px;
+  padding: 10px 0px;
+  width: 300px;
   position: relative;
-  left: 60%;
+  left: 20px;
 }
 
-#legenda {
+.grupo1 p {
+  background-color: #11a36a;
+  color: black;
+  padding: 10px 20px;
+  margin: 0px 0px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.grupo1 .estudante-dev {
+  font-size: 90%;
+  background-color: black;
+  color: #11a36a;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px;
+  width: 70%;
   position: relative;
-  float: right;
-  right: 23%;
-  top: 390px;
-  font-weight: bolder;
-  color: #005534;
+  left: 100px;
 }
 
-#quemsoueu {
-  position: absolute;
-  top: 150px;
-  right: 48%;
-}
-
-.hello {
+#hello {
+  background-color: black;
   color: white;
   font-weight: bolder;
   font-size: 20px;
+  padding: 5px 10px;
+  position: relative;
+  top: 5px;
+  right: 30%;
 }
 
-.apresentacao-inicial {
-  background-color: #11a36a;
-  color: black;
-  padding: 3px 10px 3px 10px;
-  margin: 20px;
-  position: absolute;
-  top: 220px;
-  right: 40%;
-  left: 15%;
-  text-align: justify;
-  line-height: 20px;
+a {
+  text-decoration: none;
 }
 
-.estudante-dev {
+.legenda {
+  position: relative;
+  top: 20px;
+  width: 200px;
+  margin: 0px 0px;
+  font-weight: bolder;
   color: white;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
+  background-color: #005534;
+  padding: 10px 10px;
 }
 
-.redes {
+.legenda:hover {
   background-color: black;
   color: #11a36a;
+  border: 5px double #005534;
 }
 
-.meus-links-redes {
+#redes {
+  text-align: center;
+  background-color: black;
+  color: #11a36a;
+  position: relative;
+  bottom: 50px;
+  padding: 10px 20px;
+  
+}
+
+.season-redes {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.meus-links-redes1 {
   font-family: cursive;
   font-weight: bold;
   font-style: italic;
@@ -135,18 +224,20 @@ img {
 
   margin-top: 20px;
   margin-bottom: 10px;
-  width: 200px;
+  width: 150px;
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
-  position: absolute;
-  top: 630px;
-  left: 25%;
+  display: inline-block;
+  position: relative;
+  right: 50px;
+  bottom: 40px;
 }
 
-.meus-links-redes:hover {
+.meus-links-redes1:hover {
   color: black;
   background-color: #005534;
   border: 5px double black;
+  font-size: 12px;
 }
 
 .meus-links-redes2 {
@@ -163,71 +254,113 @@ img {
 
   margin-top: 22px;
   margin-bottom: 10px;
-  width: 200px;
+  width: 150px;
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
-  position: absolute;
-  top: 630px;
-  left: 55%;
+  display: inline-block;
+  position: relative;
+  left: 50px;
+  bottom: 40px;
 }
 
 .meus-links-redes2:hover {
   color: black;
   background-color: #005534;
   border: 5px double black;
+  font-size: 12px;
 }
 
-.componentes {
-  position: relative;
-  margin-top: 9%;
-  left: 20%;
-  line-height: 20px;
-}
-
-#hard-skills {
+.github {
   color: white;
-  margin-left: 30px;
 }
 
-.observacoes-importantes {
-  position: absolute;
-  top: 740px;
-  left: 50%;
-  line-height: 25px;
+.github:hover {
+  color: black;
 }
 
-#soft-skills {
+.linkedin {
   color: white;
-  margin-left: 20px;
+}
+
+.linkedin:hover {
+  color: black;
 }
 
 .grupo3 {
-  display: block;
-  padding: 10px;
-  background-color: #11a36a;
+  background-color: #f5f5f5;
+  padding: 20px 20px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-#meucorpohtml {
-  overflow: auto;
-  overflow-x: hidden;
+.componentes1 {
+  line-height: 25px;
+  display: block;
+  width: 50%;
+  margin: 20px 50px;
+  position: relative;
+  left: 15%;
+  top: 20px;
+}
+
+.componentes2 {
+  line-height: 25px;
+  display: block;
+  width: 50%;
+  margin: 20px 100px;
+  position: relative;
+  right: 0%;
+  left: 30px;
+}
+
+.hard-skills {
+  color: #005534;
+  margin-bottom: 20px;
+  width: 200%;
+}
+
+.soft-skills h2 {
+  color: #005534;
+  margin-bottom: 20px;
+  width: 200%;
 }
 
 .referencia {
   color: white;
   text-align: center;
+  padding-top: 20px;
 }
 
-#citacao-autor {
+.citacao-autor {
   font-weight: bold;
   color: #11a36a;
 }
 
-#botao2 {
+.botao2 {
   color: white;
   text-decoration: none;
   line-height: 20px;
+  text-align: center;
+  background-color: black;
+  margin: 20px 0px 0px 0px;
+  padding: 20px;
 }
 
-#botao2:hover {
-color: #11a36a;
+.botao2 a {
+  color: #005534;
+}
+
+.botao2:hover {
+  background-color: #11a36a;
+}
+
+.botao2 a:hover {
+  color: black;
+}
+
+.meucorpohtml {
+  overflow: auto;
+  overflow-x: hidden;
 }
