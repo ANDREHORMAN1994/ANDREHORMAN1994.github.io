@@ -45,7 +45,7 @@ p {
 
 .head h1 {
   color: white;
-  font-family: monospace;
+  font-family: monospace, sans-serif;
   font-size: 4em;
   display: inline;
   margin-right: 0%;
@@ -53,7 +53,7 @@ p {
 }
 
 .head .botao1 {
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   font-weight: bold;
   font-style: italic;
   font-size: 15px;
@@ -89,7 +89,7 @@ p {
   color: #11a36a;
   text-align: center;
   position: relative;
-  top: 75px;
+  top: 85px;
   width: 100%;
   z-index: 1;
 }
@@ -211,10 +211,10 @@ a {
 }
 
 .meus-links-redes1 {
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
 
@@ -237,14 +237,14 @@ a {
   color: black;
   background-color: #005534;
   border: 5px double black;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .meus-links-redes2 {
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
 
@@ -267,7 +267,7 @@ a {
   color: black;
   background-color: #005534;
   border: 5px double black;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .github {
