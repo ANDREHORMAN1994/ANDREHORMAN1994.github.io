@@ -133,7 +133,7 @@ p {
 
 .grupo1 h1 {
   background-color: #005534;
-  color: white;
+  color: #f5f5f5;
   margin: 10px 40px;
   padding: 10px 0px;
   width: 300px;
@@ -153,7 +153,7 @@ p {
 .grupo1 .estudante-dev {
   font-size: 90%;
   background-color: black;
-  color: #11a36a;
+  color: #00d483;
   font-weight: bold;
   text-align: center;
   margin: 10px 0px;
@@ -335,7 +335,7 @@ a {
 
 .citacao-autor {
   font-weight: bold;
-  color: #11a36a;
+  color: #00d382;
 }
 
 .botao2 {
@@ -349,7 +349,7 @@ a {
 }
 
 .botao2 a {
-  color: #005534;
+  color: #01d886;
 }
 
 .botao2:hover {
