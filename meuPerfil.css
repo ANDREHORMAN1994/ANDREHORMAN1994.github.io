@@ -21,7 +21,8 @@ p {
 }
 
 #skills-aqui {
-  content: '';
+  position: relative;
+  top: 150px;
 }
 
 .head {
@@ -82,25 +83,20 @@ p {
 }
 
 .subtitulo-portfolio {
-  padding: 8px 20px;
-  margin-top: 10px;
+  padding: 10px 20px;
+  margin: 0;
   background-color: black;
   color: #11a36a;
   text-align: center;
-  position: relative;
-  top: 85px;
   width: 100%;
   z-index: 1;
 }
 
 .grupo1 {
   background-color: white;
-  padding: 40px 0px;
-  margin: 50px 0px;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-evenly; */
+  padding: 50px 0 100px;
   text-align: center;
+  font-size: medium;
 }
 
 .grupo1 .caixa-apresentacao1 {
@@ -195,18 +191,25 @@ a {
 }
 
 #redes {
-  text-align: center;
+  padding: 10px 20px;
+  margin: 0;
   background-color: black;
   color: #11a36a;
-  position: relative;
-  bottom: 50px;
-  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
   
 }
 
 .season-redes {
   text-align: center;
-  padding: 50px 0px;
+  padding: 100px 0px;
+  margin: 0;
+
+  background-image: url(/ANDREHORMAN1994.github.io/BackGround/bg01.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .meus-links-redes1 {
@@ -221,22 +224,14 @@ a {
   background-color: #11a36a;
   border: 5px double white;
 
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0px;
   width: 150px;
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
   display: inline-block;
   position: relative;
   right: 50px;
-  bottom: 40px;
-}
-
-.meus-links-redes1:hover {
-  color: black;
-  background-color: #005534;
-  border: 5px double black;
-  font-size: 15px;
 }
 
 .meus-links-redes2 {
@@ -251,15 +246,21 @@ a {
   background-color: #11a36a;
   border: 5px double white;
 
-  margin-top: 22px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0px;
   width: 150px;
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
   display: inline-block;
   position: relative;
   left: 50px;
-  bottom: 40px;
+}
+
+.meus-links-redes1:hover {
+  color: black;
+  background-color: #005534;
+  border: 5px double black;
+  font-size: 15px;
 }
 
 .meus-links-redes2:hover {
@@ -287,49 +288,47 @@ a {
 
 .grupo3 {
   background-color: #f5f5f5;
-  padding: 20px 20px;
-  padding-bottom: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  padding: 50px 0;
+  text-align: center;
+  max-width: 100%;
 }
 
 .componentes1 {
+  background-color: #11a36a;
   line-height: 25px;
-  display: block;
-  width: 50%;
-  margin: 20px 50px;
-  position: relative;
-  left: 15%;
-  top: 20px;
+  width: 30%;
+  margin: 0 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 20px 40px;
 }
 
 .componentes2 {
+  background-color: #11a36a;
   line-height: 25px;
-  display: block;
-  width: 50%;
-  margin: 20px 100px;
+  width: 30%;
+  margin: 0 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 20px 40px;
   position: relative;
-  right: 0%;
-  left: 30px;
+  bottom: 30px;
 }
 
 .hard-skills {
-  color: #005534;
+  color: #f5f5f5;
   margin-bottom: 20px;
-  width: 200%;
 }
 
 .soft-skills h2 {
-  color: #005534;
+  color: #f5f5f5;
   margin-bottom: 20px;
-  width: 200%;
 }
 
 .referencia {
   color: white;
   text-align: center;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .citacao-autor {
@@ -338,28 +337,18 @@ a {
 }
 
 .botao2 {
-  color: white;
-  text-decoration: none;
-  line-height: 20px;
   text-align: center;
+  display: block;
   background-color: black;
-  margin: 20px 0px 0px 0px;
-  padding: 20px;
-}
-
-.botao2 a {
-  color: #01d886;
+  color: #00d382;
+  padding: 10px 0;
 }
 
 .botao2:hover {
-  background-color: #11a36a;
-}
-
-.botao2 a:hover {
-  color: black;
+  background-color: #00d382;
+  color: #f5f5f5;
 }
 
 .meucorpohtml {
-  overflow: auto;
   overflow-x: hidden;
 }
