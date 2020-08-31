@@ -1,8 +1,6 @@
-#MEU PORTFÓLIO WEB
+# MEU PORTFÓLIO WEB
+#### By André Horman;
+##### DEV WEB - FULL STACK;
 
-By André Horman;
-DEV WEB - FULL STACK;
+  _[ACESSE AQUI](https://ANDREHORMAN1994.github.io)_
 
-ACESSE Aqui:
-
-https://ANDREHORMAN1994.github.io
