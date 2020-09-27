@@ -1,6 +1,7 @@
 # MEU PORTFÓLIO WEB
-### By André Horman;
-##### DEV WEB - FULL STACK;
+### Criado por André Horman | Dev Web - Full Stack;
 
-  _[ACESSE AQUI](https://ANDREHORMAN1994.github.io)_
+Sou Estudante da Escola Trybe, esse repositório é destinado ao meu portfólio pessoal e aos projetos que desenvolvi ao longo da formação também.
+
+Acesse meu Portfólio_[AQUI](https://ANDREHORMAN1994.github.io)_!!
 
