@@ -16,10 +16,6 @@ p {
   font-family: "Oranienbaum", sans-serif;
 }
 
-#botao-topo {
-  content: '';
-}
-
 #skills-aqui {
   position: relative;
   top: 150px;
