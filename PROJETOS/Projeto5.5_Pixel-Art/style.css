@@ -1,7 +1,23 @@
+@font-face {
+  src: url(./fonts/04b_30/04B_30__.TTF);
+  font-family: pixel-strong;
+}
+
+@font-face {
+  src: url(./fonts/fipps/Fipps-Regular.otf);
+  font-family: pixel-style;
+}
+
+@font-face {
+  src: url(./fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
+  font-family: pixel-normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: pixel-normal, sans-serif;
 }
 
 body {
@@ -37,6 +53,7 @@ body {
 .head-title-container h1 {
   color: #a0ff98;
   width: max-content;
+  font-family: pixel-strong, sans-serif;
   /* background-color: blue; */
 }
 
@@ -45,6 +62,7 @@ body {
   padding: 20px;
   font-size: 50px;
   font-weight: 700;
+  font-family: pixel-strong, sans-serif;
   width: max-content;
   /* background-color: blue; */
 }
@@ -54,9 +72,14 @@ body {
   color: #2b2e53;
   width: 100%;
   text-align: center;
-  font-size: 30px;
   padding: 10px;
+  
+}
+
+.head-p-container p {
   font-weight: 700;
+  font-size: 25px;
+  font-family: pixel-style, sans-serif;
 }
 
 .main-container {
@@ -136,6 +159,13 @@ body {
   border: 1px solid black;
   border-radius: 10px;
   cursor: pointer;
+  font-family: pixel-strong, sans-serif;
+}
+
+.button-create-board:hover {
+  background-color: black;
+  color: #2b2e53;
+  font-size: 13px;
 }
 
 .button {
@@ -143,6 +173,7 @@ body {
   width: 100%;
   margin: 20px auto 0;
   text-align: center;
+  font-family: pixel-strong, sans-serif;
 }
 
 .clear-board {
@@ -154,6 +185,13 @@ body {
   border-radius: 10px;
   padding: 10px 10px;
   cursor: pointer;
+  font-family: pixel-strong, sans-serif;
+}
+
+.clear-board:hover {
+  background-color: black;
+  color: #2b2e53;
+  font-size: 13px;
 }
 
 .color {
@@ -173,6 +211,13 @@ body {
   border-radius: 10px;
   cursor: pointer;
   padding: 10px;
+  font-family: pixel-strong, sans-serif;
+}
+
+.random-colors-button:hover {
+  background-color: black;
+  color: #2b2e53;
+  font-size: 13px;
 }
 
 .pixel-board {
