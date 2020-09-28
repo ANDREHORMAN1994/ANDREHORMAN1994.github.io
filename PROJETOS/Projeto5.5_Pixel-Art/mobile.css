@@ -1,0 +1,40 @@
+@media screen and (max-width: 760px) {
+  .head-title-container {
+    font-size: small;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: red; */
+  }
+
+  .pixel-art {
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+  }
+
+  .head-p-container {
+    font-size: 20px;
+  }
+
+  .main-container {
+    padding: 10px;
+  }
+
+  .color-palette {
+    /* background-color: red; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-container h2 {
+    font-size: 25px;
+  }
+
+  .footer-container p {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paleta de Cores</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css">
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="head-title-container">
+        <h1>PROJETO TRYBE</h1>
+        <span class="pixel-art"> | PIXEL ART</span>
+      </div>
+      <div class="head-p-container">
+        <p>Pinte Sua arte em nosso quadro de pixel 🎨🖌️</p>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="palette-container">
+        <h2 id="title" class="title">Paleta de Cores</h2>
+
+        <section id="color-palette" class="color-palette">
+          <div class="color black selected"></div>
+          <div class="color red"></div>
+          <div class="color blue"></div>
+          <div class="color green"></div>
+        </section>
+
+        <button class="random-colors-button">Gerar Cores</button>
+      </section>
+      <hr />
+      <section class="userElements">
+        <p>Escolha o Tamanho do Quadro</p>
+        <input
+          type="number"
+          placeholder="5 ou 50"
+          class="inputElements placeholder"
+          id="board-size"
+          min="1"
+          max="50"
+        />
+        <button
+          type="button"
+          class="inputElements button-create-board"
+          id="generate-board"
+        >
+          Criar Quadro
+        </button>
+      </section>
+
+      <section id="pixel-board" class="pixel-board"></section>
+
+      <section class="button">
+        <button type="button" id="clear-board" class="clear-board">
+          Limpar Quadro
+        </button>
+      </section>
+    </main>
+    
+    <footer class="footer-container">
+      <h2>Criado por André Horman</h2>
+      <p>Todos os direitos Reservados</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
