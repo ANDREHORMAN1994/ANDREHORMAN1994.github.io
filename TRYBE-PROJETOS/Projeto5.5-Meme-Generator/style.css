@@ -1,0 +1,157 @@
+@font-face {
+  src: url(./fonts/memes/Memes.ttf);
+  font-family: meme;
+}
+
+@font-face {
+  src: url(./fonts/brighly_crush/Brightly\ Crush\ Shine.otf);
+  font-family: titulo;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.container-title {
+  background-color: brown;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-title-container {
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  width: 70%;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.title {
+  color: #a0ff98;
+  width: max-content;
+  font-size: 60px;
+  font-family: titulo, sans-serif;
+  /* background-color: blue; */
+}
+
+.meme-span {
+  color: #98b0ff;
+  padding: 20px;
+  font-size: 60px;
+  font-weight: 700;
+  width: max-content;
+  font-family: titulo, sans-serif;
+  /* background-color: blue; */
+}
+
+.files {
+  text-align: center;
+}
+
+.fileSection {
+  background-color: brown;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  width: 400px;
+}
+
+.filesItems {
+  display: inline-block;
+  font-size: 15px;
+  margin: auto;
+}
+
+.text-input {
+  border: 1px solid black;
+  line-height: 10px;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+.meme-insert {
+  margin: auto;
+  padding: 5px 0;
+  width: 250px;
+}
+
+.meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  width: 400px;
+}
+
+.meme-image {
+  height: 100%;
+  width: 100%;
+}
+
+.meme-text {
+  bottom: 0;
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+}
+
+.borders {
+  margin: 40px;
+  text-align: center;
+}
+
+.button {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.fire {
+  background-color: red;
+}
+
+.water {
+  background-color: blue;
+}
+
+.earth {
+  background-color: green;
+}
+
+.title2 {
+  color: black;
+  text-align: center;
+}
+
+.miniature {
+  text-align: center;
+}
+
+.miniatureImg {
+  display: inline-block;
+  height: 80px;
+  margin: 10px;
+  width: 100px;
+}

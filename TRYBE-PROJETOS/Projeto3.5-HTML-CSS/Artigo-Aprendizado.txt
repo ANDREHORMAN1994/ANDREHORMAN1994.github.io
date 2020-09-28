@@ -1,0 +1,3 @@
+Oi, Meu nome é André Horman, sou graduado em ciências contábeis e cai de paraquedas nesse mundo da programação recentemente. Estudar na Trybe tem sido uma experiência realizadora na minha vida, não apenas como uma fonte de conhecimento para um desenvolvedor iniciante como eu, mas também como um divisor de horizontes, a Trybe me deu nova expectativa de vida e definiu a carreira profissional que almejo conseguir, sempre quis trabalhar com algo satisfatório e aqui aprendi o prazer da programação.
+
+O sentimento de empolgação resumi bem como tem sido essas 3 semanas de estudo na Trybe, cada dia tem sido um desafiado diferente, mas o sentimento de aprendizado recompensa todo o esforço investido. Esse projeto é o resultado disso.

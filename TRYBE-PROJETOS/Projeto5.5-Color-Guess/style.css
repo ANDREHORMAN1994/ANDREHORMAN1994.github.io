@@ -1,0 +1,12 @@
+.color-palete {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.ball {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 50px;
+  margin: 10px;
+  width: 50px;
+}

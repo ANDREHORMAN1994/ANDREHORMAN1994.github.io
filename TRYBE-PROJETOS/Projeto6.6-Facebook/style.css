@@ -1,0 +1,163 @@
+body {
+  background-image: linear-gradient(white, rgba(115, 120, 150, 0.466));
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.facebook-logo {
+  width: 180px;
+}
+
+.facebook-login {
+  align-items: baseline;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.form-group label {
+  color: white;
+}
+
+.form-group span {
+  color: white;
+  opacity: 0.6;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.button-login {
+  background-color: rgb(66, 103, 178);
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.left-content {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 800px;
+  width: 800px;
+}
+
+.left-content p {
+  color: rgb(66, 103, 178);
+  font-size: large;
+  font-weight: 700;
+  text-align: left;
+  width: 400px;
+}
+
+.left-content img {
+  width: 400px;
+}
+
+.right-content {
+  max-width: 300px;
+  width: 300px;
+}
+
+.right-content .title-right-container {
+  font-size: 2em;
+  margin: 0;
+}
+
+.right-content p {
+  margin: 5px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.form-container input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 25px;
+  margin: 5px;
+}
+
+.name-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.name-container input {
+  width: 50%;
+}
+
+.adress-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.adress-container input {
+  width: 100%;
+}
+
+.password-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.password-container input {
+  width: 100%;
+}
+
+.date-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.gender-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioButton-Container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.button-register {
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  height: 50px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.required-alert {
+  color: red;
+}

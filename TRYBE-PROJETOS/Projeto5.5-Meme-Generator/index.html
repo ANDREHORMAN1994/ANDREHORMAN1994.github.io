@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEME GENERATOR</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="container-title" class="container-title">
+      <div class="head-title-container">
+        <h1 class="title">PROJETO TRYBE</h1>
+        <span class="meme-span"> | MEME GENERATOR</span>
+      </div>
+    </header>
+
+    <form class="files">
+      <div class="fileSection">
+        <strong class="filesItems">TEXTO:</strong>
+        <input
+          type="text"
+          class="filesItems text-input"
+          id="text-input"
+          maxlength="60"
+        />
+      </div>
+      <div class="fileSection">
+        <strong class="filesItems">FOTO:</strong>
+        <input type="file" class="filesItems meme-insert" id="meme-insert" />
+      </div>
+    </form>
+
+    <div id="meme-image-container" class="meme-image-container">
+      <img src="" id="meme-image" class="meme-image" alt="imagem selecionada" />
+      <p id="meme-text" class="meme-text"></p>
+    </div>
+
+    <section class="borders">
+      <button type="button" class="button fire" id="fire">BORDA 1</button>
+      <button type="button" class="button water" id="water">BORDA 2</button>
+      <button type="button" class="button earth" id="earth">BORDA 3</button>
+    </section>
+
+    <h2 class="title2">MEMES PRÉ-PRONTOS</h2>
+    <section class="miniature">
+      <img
+        id="meme-1"
+        class="miniatureImg"
+        src="./imgs/meme1.png"
+        alt="meme1"
+      />
+      <img
+        id="meme-2"
+        class="miniatureImg"
+        src="./imgs/meme2.png"
+        alt="meme2"
+      />
+      <img
+        id="meme-3"
+        class="miniatureImg"
+        src="./imgs/meme3.png"
+        alt="meme3"
+      />
+      <img
+        id="meme-4"
+        class="miniatureImg"
+        src="./imgs/meme4.png"
+        alt="meme4"
+      />
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
