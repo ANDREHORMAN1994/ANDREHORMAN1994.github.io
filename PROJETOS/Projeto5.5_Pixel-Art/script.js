@@ -3,8 +3,8 @@ const pixelBoard = document.querySelector('#pixel-board');
 const inputSizeBoard = document.querySelector('#board-size');
 const buttonSizeBoard = document.querySelector('#generate-board');
 let getColor = 'black';
-let numberLines = 5;
-let numberElements = 5;
+let numberLines = 0;
+let numberElements = 0;
 
 // FUNCTION TO clear the board
 function clearBoard() {
@@ -25,6 +25,8 @@ createLine();
 function createElement(classList) {
   const elementPixel = document.createElement('div');
   elementPixel.classList = classList;
+  elementPixel.style.width = '40px';
+  elementPixel.style.height = '40px';
   return elementPixel;
 }
 

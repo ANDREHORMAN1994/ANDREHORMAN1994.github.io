@@ -16,7 +16,7 @@
   }
 
   .head-p-container {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .main-container {
@@ -31,10 +31,10 @@
   }
 
   .footer-container h2 {
-    font-size: 25px;
+    font-size: 16px;
   }
 
   .footer-container p {
-    font-size: 20px;
+    font-size: 12px;
   }
 }

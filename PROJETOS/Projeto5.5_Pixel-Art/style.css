@@ -35,12 +35,13 @@ body {
 }
 
 .head-title-container h1 {
+  color: #a0ff98;
   width: max-content;
   /* background-color: blue; */
 }
 
 .pixel-art {
-  color: white;
+  color: #ff98fa;
   padding: 20px;
   font-size: 50px;
   font-weight: 700;
@@ -50,7 +51,7 @@ body {
 
 .head-p-container {
   background-color: #f2f2f2;
-  color: #291711;
+  color: #2b2e53;
   width: 100%;
   text-align: center;
   font-size: 30px;
@@ -159,7 +160,7 @@ body {
   border: 1px solid black;
   display: inline-block;
   height: 40px;
-  margin: 10px;
+  margin: 5px;
   width: 40px;
 }
 
@@ -175,31 +176,27 @@ body {
 }
 
 .pixel-board {
-  margin: 0;
-  padding: 0;
   box-shadow: 0 0 10px black;
-  display: flex;
-  flex-flow: column wrap;
+  box-sizing: border-box;
+  max-width: 100%;
+  /* display: table; */
 }
 
 .line {
-  height: 40px;
-  margin: 0;
-  padding: 0;
-  background-origin: border-box;
+  box-sizing: border-box;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+  /* display: table-row; */
 }
 
 .pixel {
   background-color: white;
   border: 1px solid black;
-  height: 40px;
-  width: 40px;
+  box-sizing: border-box;
   cursor: pointer;
-  margin: 0;
-  padding: 0;
+  /* display: table-cell; */
 }
 
 .footer-container {
@@ -218,15 +215,14 @@ body {
   width: 100%;
   text-align: center;
   font-size: 30px;
-  /* padding: 10px ; */
   font-weight: 700;
+  padding: 10px;
 }
 
 .footer-container p {
-  /* background-color: #20234e;
-  color: #f2f2f2; */
+  /* background-color: #20234e;*/
+  color: black;
   font-weight: 700;
   font-size: 20px;
   width: 100%;
-  /* padding: 10px; */
 }
