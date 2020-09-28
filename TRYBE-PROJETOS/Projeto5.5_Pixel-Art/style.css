@@ -40,7 +40,6 @@ body {
 .head-title-container {
   color: white;
   padding: 20px 0;
-  font-size: 25px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -53,6 +52,7 @@ body {
 .head-title-container h1 {
   color: #a0ff98;
   width: max-content;
+  font-size: 40px;
   font-family: pixel-strong, sans-serif;
   /* background-color: blue; */
 }
@@ -60,7 +60,7 @@ body {
 .pixel-art {
   color: #ff98fa;
   padding: 20px;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   font-family: pixel-strong, sans-serif;
   width: max-content;
@@ -69,16 +69,15 @@ body {
 
 .head-p-container {
   background-color: #f2f2f2;
-  color: #2b2e53;
   width: 100%;
   text-align: center;
   padding: 10px;
-  
 }
 
 .head-p-container p {
+  color: #2b2e53;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   font-family: pixel-style, sans-serif;
 }
 

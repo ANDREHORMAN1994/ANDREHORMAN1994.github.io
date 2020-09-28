@@ -1,21 +1,32 @@
 @media screen and (max-width: 760px) {
   .head-title-container {
+    max-width: 90%;
     font-size: small;
     text-align: center;
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     /* background-color: red; */
   }
 
+  .head-title-container h1 {
+    color: #a0ff98;
+    width: 100%;
+    font-size: 30px;
+    font-family: pixel-strong, sans-serif;
+    margin: 10px;
+    /* background-color: blue; */
+  }  
+
   .pixel-art {
-    font-size: x-large;
-    margin: 0;
+    font-size: 30px;
+    margin: 10px;
     padding: 0;
+    width: 100%;
   }
 
-  .head-p-container {
+  .head-p-container p {
     font-size: 15px;
   }
 
