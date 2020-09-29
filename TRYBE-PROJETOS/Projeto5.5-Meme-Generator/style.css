@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-color: #000f08;
+  background-color: black;
   width: 100%;
   height: 100vh;
   max-height: max-content;
@@ -43,6 +43,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 .head-title-container {
@@ -51,9 +52,17 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: baseline;
-  width: 100%;
+  width: 80%;
   text-align: center;
-  background-color: #000f08;
+}
+
+.head-title-subcontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex;
+  align-items: baseline;
+  width: max-content;
+  /* background-color: blue; */
 }
 
 .title {
@@ -99,6 +108,7 @@ body {
   font-size: 60px;
   color: #a0ff98;
   font-weight: 500;
+  width: max-content;
 }
 
 .p-meme-span2 {
@@ -106,6 +116,7 @@ body {
   font-size: 60px;
   color: #e0ca3c;
   font-weight: 500;
+  width: max-content;
 }
 
 .main-container {
@@ -123,7 +134,7 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   /* margin: 10px; */
-  /* background-color: #000f08; */
+  /* background-color: black; */
 }
 
 .fileSection {
@@ -311,12 +322,12 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
-  /* background-color: red; */
+  background-color: black;
 }
 
 .footer-container h2 {
   /* background-color: #f2f2f2; */
-  color: white;
+  color: #e0ca3c;
   width: 100%;
   text-align: center;
   font-size: 25px;
