@@ -1,6 +1,8 @@
 @media screen and (max-width: 760px) {
+
   .head-title-container {
-    max-width: 90%;
+    max-width: 100%;
+    width: 100%;
     font-size: small;
     text-align: center;
     display: flex;
@@ -8,6 +10,8 @@
     justify-content: center;
     align-items: center;
     /* background-color: red; */
+    padding: 20px 5px;
+    margin: 0;
   }
 
   .head-title-container h1 {
@@ -15,15 +19,16 @@
     width: 100%;
     font-size: 30px;
     font-family: pixel-strong, sans-serif;
-    margin: 10px;
+    margin: 10px 0;
     /* background-color: blue; */
   }  
 
   .pixel-art {
     font-size: 30px;
-    margin: 10px;
+    margin: 10px 0;
     padding: 0;
     width: 100%;
+    /* background-color: blue; */
   }
 
   .head-p-container p {

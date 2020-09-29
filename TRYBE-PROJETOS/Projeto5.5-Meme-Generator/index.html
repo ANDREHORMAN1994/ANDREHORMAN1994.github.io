@@ -12,6 +12,12 @@
         <h1 class="title">PROJETO TRYBE</h1>
         <span class="meme-span"> | MEME GENERATOR</span>
       </div>
+      <div class="head-p-container">
+        <p class="p-meme">
+          <span class="p-meme-span">c</span> Crie seus próprios Memes e
+          Personalize!! <span class="p-meme-span">a</span>
+        </p>
+      </div>
     </header>
 
     <form class="files">
@@ -22,6 +28,7 @@
           class="filesItems text-input"
           id="text-input"
           maxlength="60"
+          placeholder="Digite seu Texto"
         />
       </div>
       <div class="fileSection">
@@ -29,6 +36,13 @@
         <input type="file" class="filesItems meme-insert" id="meme-insert" />
       </div>
     </form>
+
+    <section class="button-move-container">
+      <button class="buttons-move">CIMA</button>
+      <button class="buttons-move">DIREITA</button>
+      <button class="buttons-move">BAIXO</button>
+      <button class="buttons-move">ESQUERDA</button>
+    </section>
 
     <div id="meme-image-container" class="meme-image-container">
       <img src="" id="meme-image" class="meme-image" alt="imagem selecionada" />
@@ -41,7 +55,7 @@
       <button type="button" class="button earth" id="earth">BORDA 3</button>
     </section>
 
-    <h2 class="title2">MEMES PRÉ-PRONTOS</h2>
+    <!-- <h2 class="title2">MEMES PRÉ-PRONTOS</h2> -->
     <section class="miniature">
       <img
         id="meme-1"
@@ -68,6 +82,12 @@
         alt="meme4"
       />
     </section>
+
+    <footer class="footer-container">
+      <h2>Desenvolvido por André Horman</h2>
+      <p>Todos os direitos Reservados</p>
+    </footer>
+
     <script src="./script.js"></script>
   </body>
 </html>

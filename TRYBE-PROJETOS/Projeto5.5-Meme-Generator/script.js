@@ -7,10 +7,22 @@ const loadText = document.querySelector('#meme-text');
 const buttonRed = document.querySelector('#fire');
 const buttonBlue = document.querySelector('#water');
 const buttonBrown = document.querySelector('#earth');
+let showContainer = false;
+
+function displayContainer() {
+  if (showContainer === false) {
+    containerMeme.style.display = 'none';
+  } else {
+    containerMeme.style.display = 'block';
+  }
+}
+displayContainer();
 
 // EVENT TO SELECT A IMAGE IN MY CONTAINER
 function selectImg(event) {
   img.src = URL.createObjectURL(event.target.files[0]);
+  showContainer = true;
+  displayContainer();
 }
 loadImg.addEventListener('change', selectImg);
 
@@ -42,5 +54,7 @@ const preImgs = document.querySelectorAll('.miniatureImg');
 for (let i = 0; i < preImgs.length; i += 1) {
   preImgs[i].addEventListener('click', function () {
     img.src = preImgs[i].src;
+    showContainer = true;
+    displayContainer();
   });
 }
