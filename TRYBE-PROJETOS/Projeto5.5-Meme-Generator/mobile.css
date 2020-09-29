@@ -146,7 +146,7 @@ opacity: 1;
     display: flex;
     flex-flow: row wrap;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     justify-content: center;
     /* background-color: red; */
   }
