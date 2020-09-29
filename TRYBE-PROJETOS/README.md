@@ -5,4 +5,6 @@
 
 Aqui fica armazenado os projetos realizados na TRYBE.
 
+- [X] - _[Projeto Meme Generator](https://ANDREHORMAN1994.github.io/TRYBE-PROJETOS/Projeto5.5_Meme-Generator)_
+
 - [X] - _[Projeto Pixel Art](https://ANDREHORMAN1994.github.io/TRYBE-PROJETOS/Projeto5.5_Pixel-Art)_
