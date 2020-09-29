@@ -1,93 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MEME GENERATOR</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header id="container-title" class="container-title">
-      <div class="head-title-container">
-        <h1 class="title">PROJETO TRYBE</h1>
-        <span class="meme-span"> | MEME GENERATOR</span>
-      </div>
-      <div class="head-p-container">
-        <p class="p-meme">
-          <span class="p-meme-span">c</span> Crie seus próprios Memes e
-          Personalize!! <span class="p-meme-span">a</span>
-        </p>
-      </div>
-    </header>
 
-    <form class="files">
-      <div class="fileSection">
-        <strong class="filesItems">TEXTO:</strong>
-        <input
-          type="text"
-          class="filesItems text-input"
-          id="text-input"
-          maxlength="60"
-          placeholder="Digite seu Texto"
-        />
-      </div>
-      <div class="fileSection">
-        <strong class="filesItems">FOTO:</strong>
-        <input type="file" class="filesItems meme-insert" id="meme-insert" />
-      </div>
-    </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEME GENERATOR</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-    <section class="button-move-container">
-      <button class="buttons-move">CIMA</button>
-      <button class="buttons-move">DIREITA</button>
-      <button class="buttons-move">BAIXO</button>
-      <button class="buttons-move">ESQUERDA</button>
-    </section>
+<body>
+  <header id="container-title" class="container-title">
+    <div class="head-title-container">
+      <span class="p-meme-span1">a</span>
+      <h1 class="title">PROJETO TRYBE</h1>
+      <span class="meme-span"> | MEME GENERATOR</span>
+      <span class="p-meme-span2">c</span>
+    </div>
+
+    <div class="head-p-container">
+      <!-- <p class="p-meme">Crie seus próprios Memes e Personalize!</p> -->
+      <form class="files">
+        <div class="fileSection">
+          <strong class="filesItems">TEXTO:</strong>
+          <input type="text" class="filesItems text-input" id="text-input" maxlength="60"
+            placeholder="Digite seu Texto" />
+        </div>
+        <div class="fileSection">
+          <strong class="filesItems">FOTO:</strong>
+          <input type="file" class="filesItems meme-insert" id="meme-insert" />
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main class="main-container">
 
     <div id="meme-image-container" class="meme-image-container">
       <img src="" id="meme-image" class="meme-image" alt="imagem selecionada" />
       <p id="meme-text" class="meme-text"></p>
     </div>
 
-    <section class="borders">
-      <button type="button" class="button fire" id="fire">BORDA 1</button>
-      <button type="button" class="button water" id="water">BORDA 2</button>
-      <button type="button" class="button earth" id="earth">BORDA 3</button>
+    <section class="options-meme-container">
+
+      <section class="meme-subcontainer borders">
+        <button type="button" class="button fire" id="fire">FIRE🔥</button>
+        <button type="button" class="button water" id="water">WATER💦</button>
+        <button type="button" class="button earth" id="earth">EARTH🍀</button>
+      </section>
+
+      <section class="meme-subcontainer button-move-container">
+        <div class="p-arrow-container">
+          <p>"Movimente o seu Texto clicando nas setas abaixo"</p>
+        </div>
+
+        <div class="arrows-container">
+          <img class="arrows up" src="./imgs/seta-cima.png" alt="botão de seta para mover a fonte do meme" />
+          <img class="arrows right" src="./imgs/seta-direita.png" alt="botão de seta para mover a fonte do meme" />
+          <img class="arrows down" src="./imgs/seta-baixo.png" alt="botão de seta para mover a fonte do meme" />
+          <img class="arrows left" src="./imgs/seta-esquerda.png" alt="botão de seta para mover a fonte do meme" />
+        </div>
+      </section>
+
+      <section class="meme-subcontainer miniature">
+        <p class="p-miniature">"Escolha uma Imagem própria ou algum dos memes abaixo pré-selecionados"</p>
+        <img id="meme-1" class="miniatureImg" src="./imgs/meme1.png" alt="meme1" />
+        <img id="meme-2" class="miniatureImg" src="./imgs/meme2.png" alt="meme2" />
+        <img id="meme-3" class="miniatureImg" src="./imgs/meme3.png" alt="meme3" />
+        <img id="meme-4" class="miniatureImg" src="./imgs/meme4.png" alt="meme4" />
+      </section>
     </section>
+  </main>
 
-    <!-- <h2 class="title2">MEMES PRÉ-PRONTOS</h2> -->
-    <section class="miniature">
-      <img
-        id="meme-1"
-        class="miniatureImg"
-        src="./imgs/meme1.png"
-        alt="meme1"
-      />
-      <img
-        id="meme-2"
-        class="miniatureImg"
-        src="./imgs/meme2.png"
-        alt="meme2"
-      />
-      <img
-        id="meme-3"
-        class="miniatureImg"
-        src="./imgs/meme3.png"
-        alt="meme3"
-      />
-      <img
-        id="meme-4"
-        class="miniatureImg"
-        src="./imgs/meme4.png"
-        alt="meme4"
-      />
-    </section>
+  <footer class="footer-container">
+    <h2>Desenvolvido por André Horman</h2>
+    <p>Todos os direitos Reservados</p>
+  </footer>
 
-    <footer class="footer-container">
-      <h2>Desenvolvido por André Horman</h2>
-      <p>Todos os direitos Reservados</p>
-    </footer>
+  <script src="./script.js"></script>
+</body>
 
-    <script src="./script.js"></script>
-  </body>
 </html>

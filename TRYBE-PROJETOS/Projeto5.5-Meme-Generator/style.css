@@ -17,52 +17,62 @@
   color: white;
 }
 
+html {
+  width: 100%;
+  /* height: 100%; */
+  max-height: max-content;
+}
+
 body {
-  /* background-color: #f2f2f2; */
-  background-image: url(./imgs/fundo.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: #000f08;
+  width: 100%;
   height: 100vh;
+  max-height: max-content;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  background-image: url(./imgs/fundo.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .container-title {
-  background-color: #000f08;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .head-title-container {
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: baseline;
-  width: 70%;
+  width: 100%;
   text-align: center;
-  /* background-color: red; */
+  background-color: #000f08;
 }
 
 .title {
   color: #a0ff98;
-  width: 100%;
-  font-size: 60px;
+  font-size: 40px;
   font-family: titulo, sans-serif;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
+  /* width: 100%; */
   /* background-color: blue; */
 }
 
 .meme-span {
   color: #e0ca3c;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
-  width: 100%;
+  margin: 0 20px;
   font-family: titulo, sans-serif;
+  /* width: 100%; */
   /* background-color: blue; */
 }
 
@@ -79,15 +89,32 @@ body {
 .p-meme {
   color: black;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
   font-family: titulo, sans-serif;
+  padding: 5px 0;
 }
 
-.p-meme-span {
+.p-meme-span1 {
   font-family: meme, sans-serif;
   font-size: 60px;
-  color: black;
+  color: #a0ff98;
   font-weight: 500;
+}
+
+.p-meme-span2 {
+  font-family: meme, sans-serif;
+  font-size: 60px;
+  color: #e0ca3c;
+  font-weight: 500;
+}
+
+.main-container {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .files {
@@ -95,63 +122,75 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  margin: 20px;
+  /* margin: 10px; */
+  /* background-color: #000f08; */
 }
 
 .fileSection {
-  background-color: #f34213;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5px 0;
-  padding: 10px 0;
-  width: 400px;
+  margin: 10px 20px;
+  /* background-color: red; */
 }
 
 .filesItems {
-  font-size: 15px;
+  font-size: 16px;
+  color: black;
+  margin: 0 5px;
 }
 
 .text-input {
   border: 1px solid black;
-  line-height: 10px;
-  padding: 5px 10px;
-  width: 200px;
+  padding: 5px;
   text-align: center;
-  color: #000f08;
-}
-
-.meme-insert {
-  padding: 5px 20px;
-  width: 700px;
-  cursor: pointer;
-  /* background-color: #E0CA3C; */
+  color: black;
+  background-color: white;
 }
 
 .button-move-container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
+  /* background-color: red; */
 }
 
-.buttons-move {
-  color: #000f08;
+.p-arrow-container p {
+  font-size: 15px;
+  color: #e0ca3c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.arrows {
+  width: 50px;
+  cursor: pointer;
+}
+
+.arrows:hover {
+  width: 45px;
 }
 
 .meme-image-container {
-  /* background-color: white; */
-  border: 1px solid black;
+  background-color: black;
+  box-shadow: 0 0 20px black;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 0;
   height: 300px;
-  margin: 0 auto;
-  position: relative;
-  top: 20px;
   width: 400px;
+  position: relative;
 }
 
 .meme-image {
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
+  margin: auto;
 }
 
 .meme-text {
@@ -164,72 +203,125 @@ body {
   text-shadow: 5px 5px 5px black;
 }
 
+.options-meme-container {
+  width: max-content;
+  margin: 0px auto;
+  /* background-color: red; */
+}
+
+.meme-subcontainer {
+  margin: 20px auto;
+  /* background-color: blue; */
+}
+
 .borders {
-  margin: 40px;
   text-align: center;
+  margin: auto;
+  width: max-content;
+  /* background-color: red; */
 }
 
 .button {
-  border: 1px solid black;
+  border-radius: 100px;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
+  width: 100px;
+  margin: 10px;
   cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+
+.button:hover {
+  width: 90px;
 }
 
 .fire {
   background-color: red;
+  border: 2px dashed white;
 }
 
 .water {
   background-color: blue;
+  border: 2px dashed white;
 }
 
 .earth {
   background-color: green;
+  border: 2px dashed white;
 }
-/* 
-.title2 {
-  color: black;
-  text-align: center;
-} */
+
+.fire:hover {
+  border: 2px solid red;
+  background-color: rgb(0, 0, 0);
+  font-size: 14px;
+  color: red;
+}
+
+.water:hover {
+  border: 2px solid blue;
+  background-color: rgb(0, 0, 0);
+  font-size: 14px;
+  color: blue;
+}
+
+.earth:hover {
+  border: 2px solid green;
+  background-color: rgb(0, 0, 0);
+  font-size: 14px;
+  color: green;
+}
 
 .miniature {
   text-align: center;
-  margin-bottom: 20px;
+}
+
+.p-miniature {
+  font-size: 15px;
+  color: #e0ca3c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  width: 500px;
 }
 
 .miniatureImg {
+  margin: 10px;
   display: inline-block;
   height: 80px;
-  margin: 0 10px;
-  width: 100px;
+  width: 90px;
   border-radius: 50%;
-  border: 5px solid #f2f2f2;
+  border: 6px double white;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .miniatureImg:hover {
-  border: 1px solid black;
+  border: 3px solid #e0ca3c;
+  height: 70px;
+  width: 80px;
+  background-color: black;
+  opacity: 1;
 }
 
 .footer-container {
-  background-color: #000f08;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
+  width: 100%;
+  /* background-color: red; */
 }
 
 .footer-container h2 {
   /* background-color: #f2f2f2; */
-  color: #e0ca3c;
+  color: white;
   width: 100%;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
-  padding: 10px;
+  padding: 10px 0 0;
   font-weight: 2;
 }
 
@@ -237,7 +329,8 @@ body {
   /* background-color: #7d0000; */
   color: white;
   font-weight: 2;
-  font-size: 20px;
+  font-size: 15px;
   width: 100%;
-  padding: 10px;
+  padding: 0 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
