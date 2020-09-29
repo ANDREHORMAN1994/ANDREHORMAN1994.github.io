@@ -13,7 +13,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: 1;
   color: white;
 }
 
@@ -33,7 +32,7 @@ body {
   justify-content: space-between;
   background-image: url(./imgs/fundo.jpg);
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+  font-family: meme, Arial, Helvetica, sans-serif;
 }
 
 .container-title {
@@ -67,8 +66,8 @@ body {
 
 .title {
   color: #a0ff98;
-  font-size: 40px;
-  font-family: titulo, sans-serif;
+  font-size: 50px;
+  font-family: titulo, Arial, Helvetica, sans-serif;
   margin: 0 20px;
   padding: 0;
   /* width: 100%; */
@@ -77,10 +76,10 @@ body {
 
 .meme-span {
   color: #e0ca3c;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   margin: 0 20px;
-  font-family: titulo, sans-serif;
+  font-family: titulo, Arial, Helvetica, sans-serif;
   /* width: 100%; */
   /* background-color: blue; */
 }
@@ -99,12 +98,12 @@ body {
   color: black;
   font-weight: 700;
   font-size: 20px;
-  font-family: titulo, sans-serif;
+  font-family: titulo, Arial, Helvetica, sans-serif;
   padding: 5px 0;
 }
 
 .p-meme-span1 {
-  font-family: meme, sans-serif;
+  font-family: meme, Arial, Helvetica, sans-serif;
   font-size: 60px;
   color: #a0ff98;
   font-weight: 500;
@@ -112,7 +111,7 @@ body {
 }
 
 .p-meme-span2 {
-  font-family: meme, sans-serif;
+  font-family: meme, Arial, Helvetica, sans-serif;
   font-size: 60px;
   color: #e0ca3c;
   font-weight: 500;
@@ -304,7 +303,7 @@ body {
   border-radius: 50%;
   border: 6px double white;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .miniatureImg:hover {
@@ -333,13 +332,12 @@ body {
   font-size: 25px;
   font-weight: 700;
   padding: 10px 0 0;
-  font-weight: 2;
 }
 
 .footer-container p {
   /* background-color: #7d0000; */
   color: white;
-  font-weight: 2;
+  font-weight: 100;
   font-size: 15px;
   width: 100%;
   padding: 0 0 20px;

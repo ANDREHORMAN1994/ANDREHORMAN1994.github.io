@@ -77,9 +77,9 @@ const preImgs = document.querySelectorAll('.miniatureImg');
 
 for (let i = 0; i < preImgs.length; i += 1) {
   preImgs[i].addEventListener('click', function () {
-    document.body.style.backgroundSize = '125%';
     document.body.style.backgroundImage = "url(./imgs/meme-fundo.jpg)";
     document.body.style.backgroundRepeat = 'round';
+    document.body.style.backgroundSize = '30%';
     img.src = preImgs[i].src;
     showContainer = true;
     displayContainer();
