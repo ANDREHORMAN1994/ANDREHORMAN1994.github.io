@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PROJETO FACEBOOK</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mobile.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 
   <main class="main-content">
     <section class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+      <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
         vida.</p>
       <img src="imgs/networking.png" alt="image networking" id="facebook-networking">
     </section>
@@ -61,12 +62,12 @@
         </section>
 
         <section class="date-container">
-          <label for="date" id="label-birthdate">Data de nascimento</label>
+          <label for="date" id="label-birthdate" class="date-tittle">Data de nascimento</label>
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="date" class="birthdate"></input>
         </section>
 
         <section class="gender-container">
-          <label for="" id="label-gender">Gênero</label>
+          <label for="" id="label-gender" class="gender-tittle">Gênero</label>
 
           <div class="radioButton-Container">
             <input type="radio" id="female" name="gender" value="Feminino">
@@ -83,6 +84,15 @@
       </form>
     </section>
   </main>
+  <footer class="footer-container">
+    <header class="footer-h2">
+      <h2>Projeto desenvolvido na Trybe com fins educacionais</h2>
+    </header>
+    <div class="footer-p">
+      <p>Desenvolvido por <strong>André Horman</strong> e <strong>Leonnardo Lair</strong></p>
+      <!-- <p>Todos os direitos reservados</p> -->
+    </div>
+  </footer>
 
   <script src="./script.js"></script>
 </body>

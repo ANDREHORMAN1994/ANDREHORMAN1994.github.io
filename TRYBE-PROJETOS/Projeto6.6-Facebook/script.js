@@ -15,24 +15,24 @@ const newInformationUser = () => {
   const birthdate = document.querySelector('.birthdate');
   const newMemberContainer = document.createElement('div');
   const paragraphy = document.createElement('p');
-
-  let gender = document.querySelector('input[name="gender"]:checked');
+  const gender = document.querySelector('input[name="gender"]:checked');
+  const otherInput = document.querySelector('.otherInput');
+  let newGender = '';
   if (gender.value === 'Personalizado') {
-    gender = document.querySelector('input[name="gender-custom"]');
+    newGender = otherInput.value;
+  } else {
+    newGender = gender.value;
   }
   paragraphy.innerText = `Olá, ${name.value} ${lastname.value}<br>
     ${phone.value}<br>
     ${birthdate.value}<br>
-    ${gender.value}`;
+    ${newGender}`;
   newMemberContainer.appendChild(paragraphy);
-
   rightContainer.innerHTML = paragraphy.innerText;
 };
 
 function registerAlert() {
-  const rightContentInputs = document
-    .querySelector('#sign-up-container')
-    .querySelectorAll('input');
+  const rightContentInputs = document.querySelector('#sign-up-container').querySelectorAll('input');
   const buttonRegister = document.querySelector('#facebook-register');
   buttonRegister.addEventListener('click', function (event) {
     event.preventDefault();
@@ -64,6 +64,7 @@ function createInputGender() {
     inputOtherGender.required = 'required';
     inputOtherGender.placeholder = 'Gênero (opcional)';
     inputOtherGender.name = 'gender-custom';
+    inputOtherGender.classList.add('otherInput');
 
     if (genderContainer.children.length === 3) {
       genderContainer.removeChild(genderContainer.lastChild);
