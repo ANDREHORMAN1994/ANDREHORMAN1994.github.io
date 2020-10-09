@@ -16,18 +16,20 @@
 
     <form action="" class="facebook-login">
       <div class="form-group">
-        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+        <label for="user-email-phone" id="user-email-phone-label">Email</label>
         <input type="text" id="user-email-phone">
       </div>
 
-      <div class="form-group">
-        <label for="user-password" id="user-password-label">Senha</label>
-        <input type="password" id="user-password">
-        <span>Esqueceu sua senha?</span>
-      </div>
+      <div class="password-container">
+        <div class="form-group">
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="password" id="user-password">
+          <span>Esqueceu sua senha?</span>
+        </div>
 
-      <div class="form-control form-group">
-        <button type="submit" id="button-login" class="button-login">Entrar</button>
+        <div class="form-control form-group">
+          <button type="submit" id="button-login" class="button-login">Entrar</button>
+        </div>
       </div>
     </form>
 
@@ -35,7 +37,8 @@
 
   <main class="main-content">
     <section class="left-content">
-      <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+      <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas
+        que fazem parte da sua
         vida.</p>
       <img src="imgs/networking.png" alt="image networking" id="facebook-networking">
     </section>
@@ -70,12 +73,18 @@
           <label for="" id="label-gender" class="gender-tittle">Gênero</label>
 
           <div class="radioButton-Container">
-            <input type="radio" id="female" name="gender" value="Feminino">
-            <label for="female">Feminino</label>
-            <input type="radio" id="male" name="gender" value="Masculino">
-            <label for="male">Masculino</label>
-            <input type="radio" id="other" name="gender" value="Personalizado">
-            <label for="other">Personalizado</label>
+            <div class="radio-gender">
+              <input type="radio" id="female" name="gender" value="Feminino">
+              <label for="female">Feminino</label>
+            </div>
+            <div class="radio-gender">
+              <input type="radio" id="male" name="gender" value="Masculino">
+              <label for="male">Masculino</label>
+            </div>
+            <div class="radio-gender">
+              <input type="radio" id="other" name="gender" value="Personalizado">
+              <label for="other">Personalizado</label>
+            </div>
           </div>
 
         </section>
@@ -86,7 +95,7 @@
   </main>
   <footer class="footer-container">
     <header class="footer-h2">
-      <h2>Projeto desenvolvido na Trybe com fins educacionais</h2>
+      <h2>Projeto da Trybe com fins educacionais</h2>
     </header>
     <div class="footer-p">
       <p>Desenvolvido por <strong>André Horman</strong> e <strong>Leonnardo Lair</strong></p>
@@ -96,4 +105,5 @@
 
   <script src="./script.js"></script>
 </body>
+
 </html>

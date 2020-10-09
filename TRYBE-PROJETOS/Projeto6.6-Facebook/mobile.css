@@ -19,34 +19,48 @@
   .facebook-login {
     background-color: rgb(110, 149, 226);
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
     width: 100%;
   }
 
   .form-group input {
     font-size: xx-small;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .form-group label {
     font-size: 13px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .form-group span {
     font-size: xx-small;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .form-control {
     align-self: center;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* background-color: red; */
   }
 
   .main-content {
     align-items: center;
     flex-flow: column wrap;
-    width: 100%;
-    margin: 20px 0;
+    width: 90%;
+    margin: 20px auto;
   }
 
   .left-content {
@@ -55,7 +69,8 @@
     flex-flow: column wrap;
     justify-content: center;
     margin: 50px auto;
-    max-width: 80%;
+    /* max-width: 90%; */
+    width: 100%;
   }
 
   .left-content .facebook-slogan {
@@ -71,6 +86,7 @@
     flex-direction: column;
     margin-bottom: 50px;
     padding: 50px;
+    width: 100%;
   }
 
   .right-content .title-right-container {
@@ -87,22 +103,58 @@
     align-items: center;
     display: flex;
     flex-flow: column nowrap;
+    width: 100%;
+    /* background-color: blue; */
+    margin: 0;
+  }
+
+  .name-container {
+    /* background-color: green; */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    margin: auto;
   }
 
   .date-tittle {
     align-self: center;
     color: rgb(66, 103, 178);
+    width: 100%;
   }
 
   .gender-tittle {
     align-self: center;
     color: rgb(66, 103, 178);
+    width: 100%;
   }
 
   .gender-container {
     align-items: center;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
+    text-align: center;
+    width: 100%;
+    /* background-color: red; */
+  }
+
+  .radioButton-Container {
+    /* background-color: brown; */
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .radio-gender {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 
   .footer-h2 {
@@ -111,6 +163,9 @@
 
   .footer-p {
     font-size: 13px;
+  }
+  input::placeholder {
+    text-align: center;
   }
 }
 
@@ -132,5 +187,21 @@
 
   .right-content {
     padding: 10px;
+  }
+
+
+  .name-container {
+    /* background-color: green; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+
+
+  .footer-h2 {
+    font-size: 10px;
   }
 }
