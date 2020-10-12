@@ -7,9 +7,14 @@ function changeColorJob() {
     const li = event.target;
     const children = list.children;
     for (let i = 0; i < children.length; i += 1) {
-      children[i].style.backgroundColor = '';
+        children[i].style.backgroundColor = '';
     }
-    li.style.backgroundColor = 'rgb(128, 128, 128)';
+
+    if (li.style.backgroundColor === '') {
+      li.style.backgroundColor = 'rgb(128, 128, 128)';
+    } else if (li.style.backgroundColor !== '') {
+      li.style.backgroundColor = 'red';
+    }
   });
 }
 
