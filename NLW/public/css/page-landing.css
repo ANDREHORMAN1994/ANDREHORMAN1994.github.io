@@ -1,0 +1,127 @@
+.page-landing {
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-subcontainer {
+  margin: auto;
+  width: min(90%, 90rem);
+}
+
+.location-container,
+h1,
+invited-container p {
+  height: 16vh;
+}
+
+.invited-container {
+  /* background-color: blue; */
+  height: 30vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-container {
+  width: 60px;
+  height: 50px;
+  background-color: #ffd666;
+  border: none;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  transition: background 200ms;
+}
+
+.button-container:hover {
+  background-color: #96feff;
+}
+
+.image-Button {
+  width: 20px;
+}
+
+.head-container img {
+  animation-delay: 50ms;
+}
+
+.location-container {
+  animation-delay: 100ms;
+}
+
+.main-container h1 {
+  animation-delay: 150ms;
+}
+
+.invited-container p {
+  animation-delay: 200ms;
+}
+
+.button-container {
+  animation-delay: 250ms;
+}
+
+@media screen and (min-width: 760px) {
+
+  .page-subcontainer {
+    background: url(../images/bg.svg) no-repeat;
+    background-position: 80%;
+    background-size: contain;
+    height: 90%;
+  }
+
+  .head-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .location-container,
+  h1,
+  invited-container p {
+    height: initial;
+    text-align: left;
+  }
+
+  .location-container {
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: clamp(4rem, 8vw, 8.4rem);
+    font-weight: 800;
+    width: min(300px, 80%);
+    line-height: .88;
+    margin: clamp(5%, 7vh, 10%) 0 4rem;
+  }
+
+  .invited-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    height: 15vh;
+    /* background-color: red; */
+  }
+
+  .invited-container p {
+    line-height: 1.5;
+    font-size: 2rem;
+    width: clamp(20rem, 20vw, 30rem);
+  }
+
+  .button-container {
+    margin: 0;
+  }
+}

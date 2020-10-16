@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 60%;
+}
+/* 
+@font-face {
+  src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+  font-family: 'Nunito', sans-serif;
+} */
+
+body {
+  background-color: #EBF2F5;
+  color: white;
+  height: 100vh;
+}
+
+body,
+input,
+button,
+textarea {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+}

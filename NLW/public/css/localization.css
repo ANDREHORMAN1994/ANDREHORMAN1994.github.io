@@ -1,0 +1,124 @@
+.page-localization-container {
+  /* background-color: blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-container {
+  width: clamp(27rem, 34vw, 45rem);
+  text-align: left;
+  padding: clamp(3rem, 5vw, 8rem);
+  background: linear-gradient(329.54deg, #15b6d6 0%, #15d6d6 100%);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.header-container {
+  /* background-color: red; */
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header-container img {
+  align-self: flex-start;
+}
+
+.header-container h2 {
+  text-align: left;
+  margin: 5rem auto 0;
+  font-weight: 800;
+  font-size: clamp(3rem, 4vw, 5rem);
+  line-height: 1;
+  font-family: 'Nunito', sans-serif;
+  /* background-color: red; */
+}
+
+.header-container p {
+  margin: 5rem 0;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: 'Nunito', sans-serif;
+  width: clamp(15rem, 23vw, 25rem);
+}
+
+footer {
+  line-height: 1.8;
+}
+
+.map-container {
+  /* background-color: green; */
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  /* opacity: 0; */
+  animation-delay: 200ms;
+}
+
+.create-localization {
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 10;
+
+  width: 64px;
+  height: 64px;
+  background-color: #15c3d6;
+
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+
+  transition: background-color 200ms;
+}
+
+.create-localization:hover {
+  background-color: #17d6eb;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 17.2828px, 27.65px, 41.48px, rgba(23, 142, 166, 0.16);
+}
+
+.leaflet-popup-content {
+  color: #0089a5;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.8rem 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.leaflet-popup-content a {
+  width: 4rem;
+  height: 4rem;
+  background: #15c3d6;
+  box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, 0.16);
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 200ms;
+}
+
+.leaflet-popup-content a:hover {
+  background-color: #17D6EB;
+}
+
+.leaflet-popup-tip {
+  display: none;
+}
+
+.leaflet-container {
+  font: 800 2rem/1'nunito', sans-serif;
+}

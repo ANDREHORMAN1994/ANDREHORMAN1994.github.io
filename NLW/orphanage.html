@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orfanato | HAPPY</title>
+    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/./sidebar.css" />
+    <link rel="stylesheet" href="./public/css/map.css" />
+    <link rel="stylesheet" href="./public/css/orphanage.css" />
+    <link rel="stylesheet" href="./public/css/buttons.css" />
+  </head>
+
+  <body>
+    <div class="page-orphanage-container">
+      <aside class="aside-container animate-right">
+        <img src="./public/images/map-marker.svg" alt="Happy" />
+
+        <footer>
+          <button class="button-back">
+            <img src="./public/images/arrow-back.svg" alt="Voltar" />
+          </button>
+        </footer>
+      </aside>
+
+      <main class="animate-opacity width-sidebar">
+        <div class="orphanage-details">
+          <img src="https://source.unsplash.com/random" alt="orfanato" />
+
+          <div class="images">
+            <button class="active button-miniature" type="button">
+              <img src="https://source.unsplash.com/random" alt="orfanato" />
+            </button>
+
+            <button class="button-miniature" type="button">
+              <img src="https://source.unsplash.com/collection/2" alt="orfanato" />
+            </button>
+
+            <button class="button-miniature" type="button">
+              <img src="https://source.unsplash.com/collection/3" alt="orfanato" />
+            </button>
+
+            <button class="button-miniature" type="button">
+              <img src="https://source.unsplash.com/collection/4" alt="orfanato" />
+            </button>
+
+            <button class="button-miniature" type="button">
+              <img src="https://source.unsplash.com/collection/5" alt="orfanato" />
+            </button>
+
+            <button class="button-miniature" type="button">
+              <img src="https://source.unsplash.com/collection/6" alt="orfanato" />
+            </button>
+          </div>
+
+          <div class="orphanage-details-content">
+            <h1>Orfanato</h1>
+            <p>
+              Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco
+              e/ou vulnerabilidade social.
+            </p>
+
+            <div class="map-container">
+              <div class="mapid-container" id="mapid"></div>
+              <footer>
+                <a href="">Ver rotas no Google Maps</a>
+              </footer>
+            </div>
+
+            <hr />
+            <h2>Instruções para Visita</h2>
+            <p>Venha como se sentir a vontade e traga muito amor e paciência para dar.</p>
+
+            <div class="open-details">
+              <div class="hour">
+                <img src="./public/images/clock.svg" alt="horários" />
+                <p>Horário de visitas Das 18h até 8h</p>
+              </div>
+
+              <div class="open-on-weekends">
+                <img src="./public/images/info.svg" alt="informações" />
+                <p>Atendemos fim de semana</p>
+              </div>
+
+            </div>
+                <button class="primary-button" type="button">
+                  <img src="./public/images/whatsapp.svg" alt="chamar no whatsapp" />
+                  <p>Entrar em contato</p>
+                </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="./public/scripts/orphanage.js"></script>
+  </body>
+</html>
