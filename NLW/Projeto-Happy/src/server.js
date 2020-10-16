@@ -5,13 +5,20 @@ const path = require('path');
 // iniciando lib express
 const server = express();
 
+server
 // declarando onde estão os arquivos estáticos
-server.use(express.static('public'))
+.use(express.static('public'))
+
+// configurar template engine
+.set('views', path.join(__dirname, 'view'))
+.set('view engine', 'hbs')
 
 // criar uma rota
 .get('/', (request, response) => {
   // console.log(path.join(__dirname, 'views', 'index.html'));
-  return response.sendFile(path.join(__dirname, 'views', 'index.html'));
+  // utilizando hbs não precisa utilizar esse path aqui embaixo
+  // return response.sendFile(path.join(__dirname, 'views', 'index.html'));
+  return response.render('index');
 });
 
 // ligar o servidor na porta
