@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orfanato | HAPPY</title>
+    <title> {{orphanage.name}} | HAPPY</title>
     <link rel="icon" href="/images/logo-icon.png" />
     <link
       rel="stylesheet"
@@ -37,33 +37,15 @@
           <img src="https://source.unsplash.com/random" alt="orfanato" />
 
           <div class="images">
-            <button class="active button-miniature" type="button">
-              <img src="https://source.unsplash.com/random" alt="orfanato" />
-            </button>
-
-            <button class="button-miniature" type="button">
-              <img src="https://source.unsplash.com/collection/2" alt="orfanato" />
-            </button>
-
-            <button class="button-miniature" type="button">
-              <img src="https://source.unsplash.com/collection/3" alt="orfanato" />
-            </button>
-
-            <button class="button-miniature" type="button">
-              <img src="https://source.unsplash.com/collection/4" alt="orfanato" />
-            </button>
-
-            <button class="button-miniature" type="button">
-              <img src="https://source.unsplash.com/collection/5" alt="orfanato" />
-            </button>
-
-            <button class="button-miniature" type="button">
-              <img src="https://source.unsplash.com/collection/6" alt="orfanato" />
-            </button>
+            {{#each orphanage.images}}
+              <button class="active button-miniature" type="button">
+                <img src="https://source.unsplash.com/random" alt="orfanato" />
+              </button>
+            {{/each}}
           </div>
 
           <div class="orphanage-details-content">
-            <h1>Orfanato</h1>
+            <h1>{{orphanage.name}}</h1>
             <p>
               Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco
               e/ou vulnerabilidade social.

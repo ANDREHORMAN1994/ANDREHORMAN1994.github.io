@@ -23,8 +23,8 @@ module.exports = [
       'https://www.osmais.com/wallpapers/201309/criancas-alegres-wallpaper.jpg'
     ],
     instructions: 'Venha nos visitar e traga muito amor e paciência para dar.',
-    openingHours: 'Horário de visitas Das 18h até 8h',
-    openOnWeekends: '1'
+    opening_hours: 'Horário de visitas Das 18h até 8h',
+    open_on_weekends: '1'
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ module.exports = [
       'https://www.osmais.com/wallpapers/201309/criancas-alegres-wallpaper.jpg'
     ],
     instructions: 'Venha nos visitar e traga muito amor e paciência para dar.',
-    openingHours: 'Horário de visitas Das 18h até 8h',
-    openOnWeekends: '0'
+    opening_hours: 'Horário de visitas Das 18h até 8h',
+    open_on_weekends: '0'
   }
 ]
