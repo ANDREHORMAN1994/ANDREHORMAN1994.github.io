@@ -1,25 +1,32 @@
-// importar dependência
+// Importar dependência
 const express = require('express');
 const path = require('path');
+const pages = require('./pages');
 
-// iniciando lib express
+// Iniciando lib express
 const server = express();
 
 server
-// declarando onde estão os arquivos estáticos
-.use(express.static('public'))
+  // Declarando onde estão os arquivos estáticos
+  .use(express.static('public'))
 
-// configurar template engine
-.set('views', path.join(__dirname, 'view'))
-.set('view engine', 'hbs')
+  // Configurar template engine
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'hbs')
 
-// criar uma rota
-.get('/', (request, response) => {
-  // console.log(path.join(__dirname, 'views', 'index.html'));
-  // utilizando hbs não precisa utilizar esse path aqui embaixo
-  // return response.sendFile(path.join(__dirname, 'views', 'index.html'));
-  return response.render('index');
-});
+  // Criar uma rota
+  // .get('/', (request, response) => {
+  //   // console.log(path.join(__dirname, 'views', 'index.html'));
+  //   // utilizando hbs não precisa utilizar esse path aqui embaixo
+  //   // return response.sendFile(path.join(__dirname, 'views', 'index.html'));
+  //   return response.render('index');
+  // });
+
+  // Criando as rotas utilizando meu arquivo pages
+  .get('/', pages.index)
+  .get('/localization', pages.localization)
+  .get('/orphanage', pages.orphanage)
+  .get('/create-orphanage', pages.createOrphanage);
 
 // ligar o servidor na porta
 server.listen(5500);

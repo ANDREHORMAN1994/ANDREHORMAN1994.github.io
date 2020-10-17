@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Localize um orfanato | HAPPY</title>
-    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link rel="icon" href="/images/logo-icon.png" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    crossorigin=""/>
    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./public/css/style.css" />
-    <link rel="stylesheet" href="./public/css/animations.css" />
-    <link rel="stylesheet" href="./public/css/localization.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/localization.css" />
   </head>
   <body>
     <div class="page-localization-container">
       <aside class="aside-container animate-right">
         <header class="header-container">
-          <img src="./public/images/map-marker.svg" alt="logo happy" />
+          <img src="/images/map-marker.svg" alt="logo happy" />
           <h2>Escolha um orfanato no mapa</h2>
           <p>Muitas crianças estão esperando sua visita! :D</p>
         </header>
@@ -27,14 +27,26 @@
         </footer>
       </aside>
 
+      <div class="orphanages">
+        {{#each orphanages}}
+          <span hidden
+          data-id="{{this.id}}"
+          data-name="{{this.name}}"
+          data-lat="{{this.lat}}"
+          data-lng="{{this.lng}}"
+          >
+          </span>
+          {{/each}}
+      </div>
+
       <div class="map-container animate-opacity" id="mapid"></div>
-      <a href="./create-orphanage.html" class="create-localization animate-up" title="Cadastre um orfanato">
-        <img src="./public/images/plus.svg" alt="Criar um orfanato">
+      <a href="/create-orphanage" class="create-localization animate-up" title="Cadastre um orfanato">
+        <img src="/images/plus.svg" alt="Criar um orfanato">
       </a>
     </div>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
-    <script src="./public/scripts/localization.js"></script>
+    <script src="/scripts/localization.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mymap);
 
 //create icon
 const icon = L.icon({
-  iconUrl: './public/images/map-marker.svg',
+  iconUrl: '/images/map-marker.svg',
   iconSize: [40, 40],
   iconAnchor: [20, 40],
 });
@@ -87,6 +87,14 @@ buttonsWeekends.forEach((button) =>
   })
 );
 
+const backToPage = () => {
+  const buttonBack = document.querySelector('.button-back');
+  buttonBack.addEventListener('click', () => {
+    history.back();
+  });
+};
+
 window.onload = () => {
   changeInputsImgs();
+  backToPage();
 };
