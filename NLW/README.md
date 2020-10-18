@@ -50,8 +50,8 @@ Essa aplicação foi desenvolvida durante a 3° edição da **Next Level Week**,
 
 Clique aqui para abrir o layout do projeto no [Figma](https://www.figma.com/file/0o6IOVcmfEhtO4ZJM7xL27/Project-Happy---NLW%233?node-id=0%3A1) feito por [Tiago Luchtenberg](https://www.instagram.com/tiagoluchtenberg/).
 
-## :file_folder: Replit
-Clique [aqui](https://ANDREHORMAN1994.github.io/NLW/Projeto-Happy/src/views/index) para abrir aplicação.
+## :file_folder: Link do Projeto
+Clique [aqui](https://ANDREHORMAN1994.github.io/NLW/Projeto-Happy/src/views/index.hbs) para abrir aplicação.
 
 ---
 
