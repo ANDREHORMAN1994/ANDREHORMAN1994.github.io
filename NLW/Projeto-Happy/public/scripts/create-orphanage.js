@@ -36,7 +36,8 @@ const changeInputsImgs = () => {
   plusButton.addEventListener('click', () => {
     // ATUALIZANDO VARIÁVEIS
     const uploadContainer = document.querySelector('.images-upload');
-    const lastInput = uploadContainer.children[uploadContainer.children.length - 1].children[0];
+    const lastInput =
+      uploadContainer.children[uploadContainer.children.length - 1].children[0];
     // console.log(lastInput);
 
     // CLONANDO ELEMENTO EXISTENTE
@@ -76,7 +77,7 @@ buttonsWeekends.forEach((button) =>
 );
 
 // ATUALIZANDO VALOR DO INPUT ESCONDIDO
-const inputHidden = document.querySelector('[name="open-on-weekends"]');
+const inputHidden = document.querySelector('[name="open_on_weekends"]');
 
 // ADICIONANDO CLASS ACTIVE
 buttonsWeekends.forEach((button) =>
@@ -95,23 +96,19 @@ const backToPage = () => {
   });
 };
 
-const validateMap = (event) => {
-  const lat = document.querySelector('#lat');
-  const lng = document.querySelector('#lng');
-  // console.log(lat.value);
-
-  if(lat.value === '' || lng.value === ''){
-    event.preventDefault();
-    alert('Selecione algum ponto do mapa')
-  }
-}
-
 const submitButton = () => {
   const button = document.querySelector('.primary-button');
-  button.addEventListener('click', () => {
-    validateMap();
-  })
-}
+  button.addEventListener('click', (event) => {
+    const lat = document.querySelector('#lat');
+    const lng = document.querySelector('#lng');
+    console.log(lat.value);
+
+    if (lat.value === '' || lng.value === '') {
+      alert('Selecione algum ponto do mapa');
+      event.preventDefault();
+    }
+  });
+};
 
 window.onload = () => {
   changeInputsImgs();

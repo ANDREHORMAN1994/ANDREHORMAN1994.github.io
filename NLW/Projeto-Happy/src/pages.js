@@ -10,11 +10,11 @@ module.exports = {
     return response.render('index');
   },
 
-  async localization(request, response) {
+  async orphanages(request, response) {
     try {
       const db = await dataBase;
       const orphanages = await db.all('SELECT * FROM orphanages');
-      return response.render('localization', { orphanages });
+      return response.render('orphanages', { orphanages });
     } catch (error) {
       console.log(error);
       return response.send('Erro no banco de dados!');
@@ -29,11 +29,12 @@ module.exports = {
         `SELECT * FROM orphanages WHERE id = "${id}"`
       );
 
+      console.log(results);
       const orphanage = results[0];
       orphanage.images = orphanage.images.split(',');
       orphanage.firstImage = orphanage.images[0];
 
-      orphanage.open_on_weekends == '0'
+      orphanage.open_on_weekends === '0' || orphanage.open_on_weekends === 'Não'
         ? (orphanage.open_on_weekends = false)
         : (orphanage.open_on_weekends = true);
 
@@ -44,21 +45,21 @@ module.exports = {
     }
   },
 
-  createOrphanage(request, response) {
-    return response.render('create-orphanage');
+  createOrphanage(req, res) {
+    return res.render('create-orphanage');
   },
 
-  async saveOrphanage(request, response) {
-    const fields = request.body;
-    // console.log(fields);
+  async saveOrphanage(req, res) {
+    const fields = req.body;
+    console.log(fields);
 
-    // validar se os campos estão preenchidos
+    //Validar se todos os campos estão preenchidos
     if (Object.values(fields).includes('')) {
-      return response.send('Preencha todas informações do mapa!');
+      return res.send('Todos os campos devem ser preenchidos!');
     }
 
     try {
-      //  salvar um orfanato
+      //Save orphanage
       const db = await dataBase;
       await saveOrphanage(db, {
         lat: fields.lat,
@@ -71,10 +72,12 @@ module.exports = {
         opening_hours: fields.opening_hours,
         open_on_weekends: fields.open_on_weekends,
       });
-      return response.redirect('/localization');
+
+      //Redirect
+      return res.redirect('/orphanages');
     } catch (error) {
       console.log(error);
-      return response.send('Erro no banco de dados');
+      return res.send('Erro no banco de dados!');
     }
   },
 };

@@ -1,4 +1,4 @@
-.page-localization-container {
+.page-orphanages-container {
   /* background-color: blue; */
   width: 100%;
   height: 100%;
@@ -58,7 +58,7 @@ footer {
   animation-delay: 200ms;
 }
 
-.create-localization {
+.create-orphanages {
   position: absolute;
   right: 5rem;
   bottom: 5rem;
@@ -75,7 +75,7 @@ footer {
   transition: background-color 200ms;
 }
 
-.create-localization:hover {
+.create-orphanages:hover {
   background-color: #17d6eb;
 }
 
