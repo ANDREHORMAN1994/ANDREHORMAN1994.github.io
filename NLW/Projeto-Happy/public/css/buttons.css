@@ -12,6 +12,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 
   transition: background-color 200ms;
 }

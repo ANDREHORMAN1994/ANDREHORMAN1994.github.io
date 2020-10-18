@@ -7,8 +7,10 @@ const backToPage = () => {
 
 const changeImg = () => {
   const miniatures = document.querySelectorAll('.button-miniature');
-  const currentMiniature = document.querySelector('.orphanage-details > img')
-  console.log(currentMiniature);
+  miniatures[0].classList.add('active');
+  // console.log(miniatures[0]);
+  const currentMiniature = document.querySelector('.orphanage-details > img');
+  // console.log(currentMiniature);
 
   miniatures.forEach((miniature) => {
     miniature.addEventListener('click', (event) => {
@@ -20,8 +22,8 @@ const changeImg = () => {
 
       // change the src form the images;
       currentMiniature.src = event.target.src;
-    })
-  })
+    });
+  });
 };
 
 window.onload = function () {
@@ -29,6 +31,7 @@ window.onload = function () {
   changeImg();
 };
 
+// options personalizadas do meu map
 const options = {
   dragging: false,
   touchZoom: false,
@@ -37,7 +40,12 @@ const options = {
   zoomControl: false,
 };
 
-const mymap = L.map('mapid', options).setView([-7.3330727, -35.3408701], 14);
+// valores originais do html
+const lat = document.querySelector('span[data-lat]').dataset.lat;
+const lng = document.querySelector('span[data-lng]').dataset.lng;
+
+// criando posição original do meu mapa
+const mymap = L.map('mapid', options).setView([lat, lng], 14);
 
 //create and add my image map
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mymap);
@@ -51,4 +59,4 @@ const icon = L.icon({
 });
 
 //create and add marker
-L.marker([-7.3330727, -35.3408701], { icon }).addTo(mymap);
+L.marker([lat, lng], { icon }).addTo(mymap);

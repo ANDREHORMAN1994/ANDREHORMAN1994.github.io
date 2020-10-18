@@ -10,11 +10,14 @@ server
   // Declarando onde estão os arquivos estáticos
   .use(express.static('public'))
 
+  // Utilizar body da requisição
+  .use(express.urlencoded({ extended: true }))
+
   // Configurar template engine
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'hbs')
 
-  // Criar uma rota
+  // Criar uma rota apenas
   // .get('/', (request, response) => {
   //   // console.log(path.join(__dirname, 'views', 'index.html'));
   //   // utilizando hbs não precisa utilizar esse path aqui embaixo
@@ -26,7 +29,8 @@ server
   .get('/', pages.index)
   .get('/localization', pages.localization)
   .get('/orphanage', pages.orphanage)
-  .get('/create-orphanage', pages.createOrphanage);
+  .get('/create-orphanage', pages.createOrphanage)
+  .post('/save-orphanage', pages.saveOrphanage);
 
 // ligar o servidor na porta
 server.listen(5500);

@@ -34,12 +34,14 @@
 
       <main class="animate-opacity width-sidebar">
         <div class="orphanage-details">
-          <img src="https://source.unsplash.com/random" alt="orfanato" />
+          <img src="{{orphanage.firstImage}}" alt="{{orphanage.name}}" />
+          {{!-- link de imagens randomicas da galeria do unsplash --}}
+          {{!-- <img src="https://source.unsplash.com/random" alt="orfanato" /> --}}
 
           <div class="images">
             {{#each orphanage.images}}
-              <button class="active button-miniature" type="button">
-                <img src="https://source.unsplash.com/random" alt="orfanato" />
+              <button class="button-miniature" type="button">
+                <img src="{{this}}" alt="{{orphanage.name}}" />
               </button>
             {{/each}}
           </div>
@@ -47,37 +49,49 @@
           <div class="orphanage-details-content">
             <h1>{{orphanage.name}}</h1>
             <p>
-              Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco
-              e/ou vulnerabilidade social.
+             {{orphanage.about}}
             </p>
 
             <div class="map-container">
               <div class="mapid-container" id="mapid"></div>
+              <span
+              data-lat="{{orphanage.lat}}"
+              data-lng="{{orphanage.lng}}">
+              </span>
               <footer>
-                <a href="">Ver rotas no Google Maps</a>
+                <a target="_blank" href="https://maps.google.com/mobile?q={{orphanage.lat}},{{orphanage.lng}}&z=15">Ver rotas no Google Maps</a>
               </footer>
             </div>
 
             <hr />
             <h2>Instruções para Visita</h2>
-            <p>Venha nos visitar e traga muito amor e paciência para dar.</p>
+            <p>{{orphanage.instructions}}</p>
 
             <div class="open-details">
               <div class="hour">
                 <img src="/images/clock.svg" alt="horários" />
-                <p>Horário de visitas Das 18h até 8h</p>
+                <p>{{orphanage.opening_hours}}</p>
               </div>
 
-              <div class="open-on-weekends">
-                <img src="/images/info.svg" alt="informações" />
-                <p>Atendemos fim de semana</p>
-              </div>
-
+              {{#if orphanage.open_on_weekends }}
+                <div class="open-on-weekends open">
+                  <img src="/images/info.svg" alt="informações" />
+                  <p>Atendemos fim de semana</p>
+                </div>
+              {{else}}
+                <div class="open-on-weekends closed">
+                  <img src="/images/info-red.svg" alt="informações" />
+                  <p>Não atendemos fim de semana</p>
+                </div>
+              {{/if}}
             </div>
-                <button class="primary-button" type="button">
-                  <img src="/images/whatsapp.svg" alt="chamar no whatsapp" />
-                  <p>Entrar em contato</p>
-                </button>
+
+            <a target="_blank" 
+              href="https://api.whatsapp.com/send?1=pt_BR&phone={{orphanage.whatsapp}}&text=Entre em contato conosco e faça a alegria de muitas crianças!! Estamos contando com vocês."
+              class="primary-button" type="button">
+              <img src="/images/whatsapp.svg" alt="chamar no whatsapp" />
+              <p>Entrar em contato</p>
+            </a>
           </div>
         </div>
       </main>

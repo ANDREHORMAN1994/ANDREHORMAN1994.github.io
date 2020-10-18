@@ -21,6 +21,7 @@ let lngNumber = document.querySelector('#lng');
 mymap.on('click', (event) => {
   const lat = event.latlng.lat;
   const lng = event.latlng.lng;
+  // console.log(lat);
   latNumber.value = lat;
   lngNumber.value = lng;
   // remove icon
@@ -94,7 +95,26 @@ const backToPage = () => {
   });
 };
 
+const validateMap = (event) => {
+  const lat = document.querySelector('#lat');
+  const lng = document.querySelector('#lng');
+  // console.log(lat.value);
+
+  if(lat.value === '' || lng.value === ''){
+    event.preventDefault();
+    alert('Selecione algum ponto do mapa')
+  }
+}
+
+const submitButton = () => {
+  const button = document.querySelector('.primary-button');
+  button.addEventListener('click', () => {
+    validateMap();
+  })
+}
+
 window.onload = () => {
   changeInputsImgs();
   backToPage();
+  submitButton();
 };
